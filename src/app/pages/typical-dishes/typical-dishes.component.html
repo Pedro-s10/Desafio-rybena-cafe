@@ -12,9 +12,9 @@
         <div class="flex justify-center item-center pt-2">
           <h2 class="font-medium" style="color: #69503c">{{item.title}}</h2>
         </div>
-<!--        <div class="flex justify-center pt-1 pb-1">-->
-<!--          <button mat-flat-button class="flex justify-center">Ver mais</button>-->
-<!--        </div>-->
+        <div class="flex justify-center pt-1 pb-1">
+          <button mat-flat-button class="flex justify-center" (click)="item.openModal(item)">Ver mais</button>
+        </div>
       </mat-card>
     </div>
   </div>
