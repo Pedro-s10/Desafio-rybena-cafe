@@ -14,13 +14,16 @@ export class NavbarComponent {
   }
   navigationTypicalDishes() {
     this.router.navigate(["pratos-tipicos"]);
+
   }
 
   navigationAboutCoffee() {
     this.router.navigate(["sobre"]);
+
   }
 
   navigationCoffeeDrinks() {
     this.router.navigate(["bebidas"]);
+
   }
 }

@@ -1,17 +1,21 @@
 .space {
   flex: 1 1 auto
 }
-
-.opitions-navigation {
-   a {
-     color: white;
-   }
+a {
+  color: white;
 }
+
 
 mat-toolbar {
   background: #69503c;
 
-  span {
-    color: white;
-  }
+
+}
+
+span {
+  color: white;
+}
+.active {
+  color: black !important;
+
 }
