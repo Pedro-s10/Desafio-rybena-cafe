@@ -19,4 +19,8 @@ export class NavbarComponent {
   navigationAboutCoffee() {
     this.router.navigate(["sobre"]);
   }
+
+  navigationCoffeeDrinks() {
+    this.router.navigate(["bebidas"]);
+  }
 }
