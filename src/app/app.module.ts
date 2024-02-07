@@ -11,6 +11,7 @@ import { AboutCoffeComponent } from './pages/about-coffe/about-coffe.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from "@angular/material/tooltip";
 import { TypicalDishesComponent } from './pages/typical-dishes/typical-dishes.component';
+import {CoffeeDrinksComponent} from "./pages/coffee-drinks/coffee-drinks.component";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TypicalDishesComponent } from './pages/typical-dishes/typical-dishes.co
     NavbarComponent,
     AboutCoffeComponent,
     TypicalDishesComponent,
+    CoffeeDrinksComponent
 
   ],
   imports: [
