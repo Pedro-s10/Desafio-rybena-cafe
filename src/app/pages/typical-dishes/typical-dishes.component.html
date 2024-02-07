@@ -5,54 +5,16 @@
       <h1 class="font-medium text-4xl" style="color: #69503c">Pratos típicos</h1>
     </div>
     <div class="flex flex-row gap-6 justify-center flex-wrap ml-5 item-center w-full ">
-
-      <mat-card class="min-h-15 min-w-64 flex-grow-0" style=" border-radius: 10px">
-        <img style="max-height: 10rem" mat-card-image matTooltip="Mousse de café"
-             src="https://reservagourmet.files.wordpress.com/2014/10/recipe2069_mouskafe.jpg?w=604"
-             alt="Mousse de café">
+      <mat-card class="min-h-15 min-w-64" style=" border-radius: 10px" *ngFor="let item of cards">
+        <img style="max-height: 10rem" mat-card-image [matTooltip]="item.matTooltip"
+         [src]="item.pathImage"
+             [alt]="item.alt">
         <div class="flex justify-center item-center pt-2">
-          <h2 class="font-medium" style="color: #69503c">Mousse de café</h2>
+          <h2 class="font-medium" style="color: #69503c">{{item.title}}</h2>
         </div>
-        <div class="flex justify-center pt-1">
-          <button mat-flat-button class="flex justify-center">Ver mais</button>
-        </div>
-      </mat-card>
-
-      <mat-card class="min-h-15 min-w-64" style=" border-radius: 10px">
-        <img style="max-height: 10rem" mat-card-image matTooltip="Gelato de café"
-             src="https://f.i.uol.com.br/guia/bares/images/15294750.jpeg"
-             alt="Gelato de café">
-        <div class="flex justify-center item-center pt-2">
-          <h2 class="font-medium" style="color: #69503c">Gelato de café</h2>
-        </div>
-        <div class="flex justify-center pt-1">
-          <button mat-flat-button class="flex justify-center">Ver mais</button>
-        </div>
-      </mat-card>
-
-
-      <mat-card class="min-h-15 min-w-64 " style=" border-radius: 10px">
-        <img style="max-height: 10rem" mat-card-image matTooltip="Filé ao molho de café"
-             src="https://www.boqnews.com/wp-content/uploads/2021/08/receita_de_fil_mignon_ao_molho_madeira_2020-06-09.jpeg"
-             alt="Filé ao molho de café">
-        <div class="flex justify-center item-center pt-2">
-          <h2 class="font-medium" style="color: #69503c">Filé ao molho de café</h2>
-        </div>
-        <div class="flex justify-center pt-1">
-          <button mat-flat-button class="flex justify-center">Ver mais</button>
-        </div>
-      </mat-card>
-
-      <mat-card class="min-h-15 min-w-64" style=" border-radius: 10px">
-        <img style="max-height: 10rem" mat-card-image matTooltip="Panqueca de café"
-             src="https://i0.wp.com/pacaembualimentos.com.br/wp-content/uploads/2020/12/panqueca-de-cafe.jpg?resize=1170%2C650"
-             alt="Panqueca de café">
-        <div class="flex justify-center item-center pt-2">
-          <h2 class="font-medium" style="color: #69503c">Panqueca de café</h2>
-        </div>
-        <div class="flex justify-center pt-1 pb-1">
-          <button mat-flat-button class="flex justify-center">Ver mais</button>
-        </div>
+<!--        <div class="flex justify-center pt-1 pb-1">-->
+<!--          <button mat-flat-button class="flex justify-center">Ver mais</button>-->
+<!--        </div>-->
       </mat-card>
     </div>
   </div>
