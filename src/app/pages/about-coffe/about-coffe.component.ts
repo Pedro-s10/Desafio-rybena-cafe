@@ -5,6 +5,7 @@ export interface ICardData {
   matTooltip: string
   alt: string
   title: string
+  openModal: Function
 }
 
 @Component({
@@ -18,28 +19,40 @@ export class AboutCoffeComponent {
       alt: 'Café Arábica',
       matTooltip: 'Café Arábica',
       title: 'Café Arábica',
-      pathImage: 'https://www.graogourmet.com/wp-content/uploads/2022/02/Capas-blog-cafe-arabica.jpg'
+      pathImage: 'https://www.graogourmet.com/wp-content/uploads/2022/02/Capas-blog-cafe-arabica.jpg',
+      openModal: ()=>{
+
+      }
     },
 
     {
       alt: 'Café Bourbon',
       matTooltip: 'Café Bourbon',
       title: 'Café Bourbon',
-      pathImage: 'https://www.graogourmet.com/wp-content/uploads/2016/02/bourbon-amarelo-oficial.jpg'
+      pathImage: 'https://www.graogourmet.com/wp-content/uploads/2016/02/bourbon-amarelo-oficial.jpg',
+      openModal: ()=>{
+
+      }
     },
 
     {
       alt: 'Café Kona',
       matTooltip: 'Café Kona',
       title: 'Café Kona',
-      pathImage: 'https://img.freepik.com/fotos-premium/graos-de-cafe-havaianos-kona-red-na-arvore-que-cresce-na-plantacao-em-kauai_539233-5338.jpg'
+      pathImage: 'https://img.freepik.com/fotos-premium/graos-de-cafe-havaianos-kona-red-na-arvore-que-cresce-na-plantacao-em-kauai_539233-5338.jpg',
+      openModal: ()=>{
+
+      }
     },
 
     {
       alt: 'Café Geisha',
       matTooltip: 'Café Geisha',
       title: 'Café Geisha',
-      pathImage: 'https://dailycoffeenews.com/wp-content/uploads/2017/11/Geisha-Cherries-01-Chispita-Costa-Rica.jpg'
+      pathImage: 'https://dailycoffeenews.com/wp-content/uploads/2017/11/Geisha-Cherries-01-Chispita-Costa-Rica.jpg',
+      openModal: ()=>{
+
+      }
     },
 
   ]
