@@ -5,6 +5,8 @@ Foi desenvolvida uma landing page em Angular com o tema café e integrado com a 
 
 Foi utilizado o Angular na versão 15.0.0 e o Node na versão 21.6.1.
 
+OBS: Como não foi utilizado nenhum backend mesmo assim foi criado a pasta service.
+
 
 <h2 align='center'>Instruções</h2>
 
