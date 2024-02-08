@@ -1,27 +1,16 @@
-# AppCafeDesafioRybena
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+<h1 align='center'>Desafio Rybená</h1>
 
-## Development server
+Foi desenvolvida uma landing page em Angular com o tema café e integrado com a API do rybená, tendo foco principal no front-end, questão de cores, responsividade e estética em geral. Outro foco foi na implementação do código e organização de pastas/arquivos, visando um código limpo, reutilizável, componentizado, design de interfaces intuitivas utilizando Angular Material e o framework Tailwind.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Foi utilizado o Angular na versão 15.0.0 e o Node na versão 21.6.1.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2 align='center'>Instruções</h2>
 
-## Build
+- git clone https://github.com/Pedro-s10/Desafio-rybena-cafe.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- npm install
 
-## Running unit tests
+- ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
