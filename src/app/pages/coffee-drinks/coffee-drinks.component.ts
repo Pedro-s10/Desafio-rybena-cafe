@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
+import {ModalDetailsCoffeComponent} from "../../dialogs/modal-details-coffe/modal-details-coffe.component";
 
 
 export interface ICardData {
@@ -6,6 +8,7 @@ export interface ICardData {
   matTooltip: string
   alt: string
   title: string
+  desc: string
   openModal: Function
 }
 
@@ -15,14 +18,25 @@ export interface ICardData {
   styleUrls: ['./coffee-drinks.component.css']
 })
 export class CoffeeDrinksComponent {
+
+  constructor(public dialog: MatDialog) {
+  }
   cards: ICardData[] = [
     {
       alt: 'Cappuccino',
       matTooltip: 'Cappuccino',
       title: 'Cappuccino',
+      desc: 'Aqui vai a desc',
       pathImage: 'https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-CAPPUCCINO-BANANA-SESAME-SEEDS.jpg',
-      openModal: ()=>{
-
+       openModal: (res: ICardData) => {
+        this.dialog.open(ModalDetailsCoffeComponent, {
+          data: {
+            ...res
+          },
+          panelClass: 'custom-dialog-container',
+          width: "40rem",
+          height: "30rem",
+        })
       }
     },
 
@@ -30,9 +44,17 @@ export class CoffeeDrinksComponent {
       alt: 'Espresso Martini',
       matTooltip: 'Espresso Martini',
       title: 'Espresso Martini',
+      desc: 'Aqui vai a desc',
       pathImage: 'https://claudia.abril.com.br/wp-content/uploads/2022/03/Espresso-Martini.jpg',
-      openModal: ()=>{
-
+       openModal: (res: ICardData) => {
+        this.dialog.open(ModalDetailsCoffeComponent, {
+          data: {
+            ...res
+          },
+          panelClass: 'custom-dialog-container',
+          width: "40rem",
+          height: "30rem",
+        })
       }
     },
 
@@ -40,9 +62,17 @@ export class CoffeeDrinksComponent {
       alt: 'Latte Macchiato',
       matTooltip: 'Latte Macchiato',
       title: 'Latte Macchiato',
+      desc: 'Aqui vai a desc',
       pathImage: 'https://uniquecafes.com.br/wp-content/uploads/2021/08/Destaque-Latte-Macchiato.jpg',
-      openModal: ()=>{
-
+       openModal: (res: ICardData) => {
+        this.dialog.open(ModalDetailsCoffeComponent, {
+          data: {
+            ...res
+          },
+          panelClass: 'custom-dialog-container',
+          width: "40rem",
+          height: "30rem",
+        })
       }
     },
 
@@ -50,9 +80,17 @@ export class CoffeeDrinksComponent {
       alt: 'Flat White',
       matTooltip: 'Flat White',
       title: 'Flat White',
+      desc: 'Aqui vai a desc',
       pathImage: 'https://methodicalcoffee.com/cdn/shop/articles/Flat_white_sitting_on_a_table_1024x.jpg?v=1695740372',
-      openModal: ()=>{
-
+       openModal: (res: ICardData) => {
+        this.dialog.open(ModalDetailsCoffeComponent, {
+          data: {
+            ...res
+          },
+          panelClass: 'custom-dialog-container',
+          width: "40rem",
+          height: "30rem",
+        })
       }
     },
 

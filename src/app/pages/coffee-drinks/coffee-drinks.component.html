@@ -4,7 +4,7 @@
     <div class="p-4">
       <h1 class="font-medium text-4xl" style="color: #69503c">Bebidas com café</h1>
     </div>
-    <div class="flex flex-row gap-6 justify-center flex-wrap ml-5 item-center w-full ">
+    <div class="flex flex-row gap-6 justify-center flex-wrap item-center w-full ">
 
       <mat-card class="min-h-15 min-w-64" style=" border-radius: 10px" *ngFor="let item of cards">
         <img style="max-height: 10rem" mat-card-image [matTooltip]="item.matTooltip"
@@ -22,7 +22,8 @@
   </div>
 </div>
 
-<div style="background-color: #69503c; width: 100%; min-height: 36rem; display: flex" class="flex-col">
+<div style="background-color: #69503c; width: 100%; min-height: 33rem; display: flex">
+  <div class="p-5 ">
   <div class="flex justify-center text-4xl pt-3">
     <h1 style="color: white">Bebidas com café</h1>
   </div>
@@ -44,5 +45,5 @@
       </p>
     </div>
   </div>
-
+  </div>
 </div>
