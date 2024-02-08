@@ -1,15 +1,8 @@
-import {Component, Injectable, Input, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import {ModalDetailsCoffeComponent} from "../../dialogs/modal-details-coffe/modal-details-coffe.component";
 import {MatDialog} from "@angular/material/dialog";
+import {ICardData} from "../../interfaces/ICardData";
 
-export interface ICardData {
-  pathImage: string
-  matTooltip: string
-  alt: string
-  title: string
-  desc: string
-  openModal: Function
-}
 
 @Component({
   selector: 'app-about-coffe',
@@ -18,7 +11,13 @@ export interface ICardData {
 })
 
 export class AboutCoffeComponent {
-  teste: any
+
+  constructor(
+    public dialog: MatDialog
+  ) {
+
+  }
+
   cards: ICardData[] = [
     {
       alt: 'Café Arábica',
@@ -94,11 +93,6 @@ export class AboutCoffeComponent {
 
   ]
 
-  constructor(
-    public dialog: MatDialog
-  ) {
-    this.teste = this.cards.push()
-  }
 
   ngOnInit() {
 

@@ -1,10 +1,8 @@
-import {Component, Inject, Input, Output} from '@angular/core';
-import {MAT_DIALOG_DATA} from "@angular/material/dialog";
+import {Component, Inject} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialog} from "@angular/material/dialog";
+import {IModalData} from "../../interfaces/IModalData";
 
-export interface IModalData {
-  title: string
-  desc: string
-}
+
 @Component({
   selector: 'app-modal-details-coffe',
   templateUrl: './modal-details-coffe.component.html',
@@ -13,13 +11,14 @@ export interface IModalData {
 export class ModalDetailsCoffeComponent {
   data!: IModalData
   constructor(
+    public dialog: MatDialog,
     @Inject(MAT_DIALOG_DATA) public res: any,
   ) {
 
   }
 
   ngOnInit() {
-    // recebe os dados do meu component about-coffe, poreḿ so vou utilizar o desc e title
       this.data = this.res
   }
+
 }
